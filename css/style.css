@@ -3,6 +3,7 @@
     --fuenteParrafos: 'Open Sans', sans-serif;
 
     --primario: #846854;
+    --secundario: #928E8C ;
     --blanco: #fff;
     --negro: #000;
 }
@@ -64,8 +65,44 @@ img {
     background-size: cover;
     background-position: center center;
 }
-.header__texto {
+.header__texto{
     text-align: center;
     color: var(--blanco);
-    margin-top: 5em
+    margin-top: 5em;
+}
+@media (min-width: 768px) {
+    .header__texto {
+        margin-top: 20rem;
+    }
+}
+
+/* Navegacion */
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;  
+    }
+}
+.logo {
+    color: var(--blanco);
+}
+.logo__nombre {
+    font-weight: 400;
+}
+.logo__bold {
+    font-weight: 700;
+    color: var(--primario);
+}
+@media (min-width: 768px) {
+    .navegacion {
+        display: flex;
+        gap: 2rem;
+    }
+}
+.navegacion__enlace {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
 }
